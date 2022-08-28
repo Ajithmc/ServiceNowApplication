@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ServiceNowApplication" verbose = "2">
+<!-- <parameter name = "Browser" value ="Chrome"/> -->
+<parameter name = "URL" value ="https://dev92105.service-now.com"/>
+<parameter name = "username" value ="admin"/>
+<parameter name = "password" value ="Ajithmc@98"/>
+  <test thread-count="2" name="ServiceNow">
+  <parameter name = "browser" value ="Chrome"/>
+    <classes>
+      <class name="serviceNowApplication.CreateNewProposal"/>
+      <class name="serviceNowApplication.CreateNewCaller"/>
+      <class name="serviceNowApplication.FillMandatoryFields"/>
+      <class name="serviceNowApplication.Orderingmobile"/>
+      </classes>
+  </test>
+  
+</suite> <!-- ServiceNowApplication -->
